@@ -23,6 +23,8 @@ const RegisterForm = () => {
 	const [loading, setLoading] = React.useState(false);
 	const router = useRouter();
 
+	console.log(user);
+
 	React.useEffect(() => {
 		const isUser = Object.values(user).every((el) => Boolean(el));
 		isUser ? setDisabled(false) : setDisabled(true);
